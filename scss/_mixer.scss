@@ -1,0 +1,38 @@
+@mixin reset-list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+@mixin reset-link {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+}
+
+@mixin site-btn {
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 9px 33px;
+    background-color: transparent;
+}
+@mixin line {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+}
+
+
+@mixin breakpoint-tablet ($screen-width) {
+    @media only screen and (max-width: $screen-width) {
+      @content
+    }
+  };
+
+@mixin breakpoint-mobile ($screen-width) {
+  @media only screen and (max-width: $screen-width) {
+    @content
+  }
+};

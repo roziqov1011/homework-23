@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    // font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+    overflow-x: hidden;
+}

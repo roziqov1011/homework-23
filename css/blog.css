@@ -1,0 +1,14 @@
+.container {
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.blog-section {
+  background-color: #004047;
+  background-image: url(/images/blog-1.png), url(/images/blog-2.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}/*# sourceMappingURL=blog.css.map */

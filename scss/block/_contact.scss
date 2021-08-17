@@ -1,0 +1,142 @@
+@import "../mixer";
+@import "../varibles";
+@import "../container";
+
+
+.contact-section {
+    background-color: #014E56;
+    background-image: url(/images/contact-1.svg), url(/images/contact-2.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+.contact-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 128px;
+}
+
+.contact-wrap__left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact-left__title {
+    font-size: 64px;
+    line-height: 100px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.contact-left__sub-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #F67E7E;
+    margin: 0;
+}
+
+.contact-left__list {
+    @include reset-list;
+}
+
+.contact-list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+.contact-left__text {
+    margin-left: 23px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+
+.contact-wrap__right {
+    width: 50%;
+}
+
+.contact-right__form {
+    width: 100%;
+}
+
+.contact-form__input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    padding: 24px 10px 16px 10px;
+}
+
+.contact-form__textarea {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.contact-form__button {
+    margin-top: 24px;
+    padding: 10px 32px;
+    outline: none;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-weight: 600;
+    color: #004047;
+}
+.contact-form__button:hover{
+ background-color: transparent;
+ color: #fff;
+}
+.contact-form__button:active{
+    opacity: 0.5;
+}
+@include breakpoint-tablet(900px){
+    .contact-left__title{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-left__sub-title{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-wrap__left{
+        width: 100%;
+    }
+    .contact-left__list{
+        width: 70%;
+        margin-left: 20%;
+        
+    }
+
+    .contact-wrap__right{
+    width: 100%;
+    }
+}
+@include breakpoint-tablet(450px){
+    .contact-section{
+        background-image: none;
+        background-image: url(/images/contact-2.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    .contact-left__list{
+        width: 100%;
+        margin-left: 0%;
+        
+    }
+}

@@ -1,0 +1,124 @@
+@import "../varibles";
+@import "../general";
+@import "../mixer";
+
+.content {
+    background: #012f34 url(/images/content-halqa.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    // transform: translateY(-100px);
+    margin-top: -100px;
+}
+
+.inner-content {
+    padding-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.content-left {
+    width: 445px;
+}
+
+.content-left__linie {
+    @include line;
+    background-color: $tomato;
+}
+
+.content-left__title {
+    margin-right: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.content-right {
+    @include reset-list;
+    width: 540px;
+}
+@keyframes content-img{
+    50%{
+        fill: #0be228;
+    }
+    100%{
+       fill: #ff0000;
+    }
+}
+.content-right__img path{
+    animation: 1s linear 0s infinite alternate content-img;
+}
+
+
+
+@keyframes content-img_oval{
+    50%{
+        fill: #0be228;
+    }
+    100%{
+       fill: #ff0;
+    }
+}
+.content-right__img circle{
+    animation: 1s linear 0s infinite alternate content-img_oval;
+}
+.content-right__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.content-right__item-info {
+    width: 80%;
+}
+
+.content-right__title {
+    color: $tomato;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.content-right__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+@include breakpoint-tablet(768px) {
+    .content {
+        background-position: top right;
+    }
+
+    .inner-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-left{
+        width: 70%;
+    }
+
+    .content-left__title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .content-right {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+}
+@include breakpoint-mobile(550px){
+    .content-right__item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

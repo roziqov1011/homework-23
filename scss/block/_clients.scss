@@ -1,0 +1,51 @@
+@import "../mixer";
+@import "../varibles";
+@import "../container";
+
+.clients-section {
+    background: #012F34 url(/images/clients-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.clients {
+    padding: 140px 0;
+}
+
+.clients-title {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.clients-list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@include breakpoint-tablet(920px) {
+    .clients-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .client-list__item--img {
+        width: 103px;
+        height: 17px;
+    }
+}
+
+@include breakpoint-tablet(660px){
+    .clients-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .client-list__item--img{
+        margin-bottom: 20px;
+        width: 210px;
+        height: 27px;
+    }
+}

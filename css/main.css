@@ -988,6 +988,7 @@ body {
   background-color: transparent;
   border: 2px solid #012F34;
   color: #012F34;
+  text-decoration: none;
 }
 
 .element-btn:hover {
@@ -1338,6 +1339,7 @@ body {
   border-bottom: 1px solid #fff;
   background-color: transparent;
   padding: 24px 10px 16px 10px;
+  color: #fff;
 }
 
 .contact-form__textarea {
@@ -1348,6 +1350,8 @@ body {
   border-bottom: 1px solid #fff;
   background-color: transparent;
   padding: 10px;
+  resize: none;
+  color: #fff;
 }
 
 .contact-form__button {
@@ -1451,6 +1455,7 @@ body {
 .blog-list__item:hover .blog-list__item1 {
   transform: rotate(-180deg) rotateX(180deg) scale(0);
   transform-origin: top left;
+  box-shadow: 0px 0px 1px 20px #3cff00;
 }
 
 .blog-list__item:hover .blog-list__item--plus {
@@ -1481,6 +1486,7 @@ body {
   background-color: #012F34;
   z-index: 99;
   transition: transform 1.5s cubic-bezier(0.96, 0.04, 0, 0.98);
+  overflow: hidden;
 }
 
 .blog-list__item1--img {
